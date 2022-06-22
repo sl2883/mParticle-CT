@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             options.logLevel = MPILogLevel.verbose
         
             let identityRequest = MPIdentityApiRequest.withEmptyUser()
-            identityRequest.email = "foo4@examplemparticle1.com"
-            identityRequest.customerId = "foo4"
+            identityRequest.email = "foo6@examplemparticle1.com"
+            identityRequest.customerId = "foo6"
         
             options.identifyRequest = identityRequest
             options.onIdentifyComplete =  {(result: MPIdentityApiResult?, error: Error?) in
@@ -86,14 +86,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                     withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 
             NSLog("%@: will present notification: %@", self.description, notification.request.content.userInfo)
-//            CleverTap.sharedInstance()?.recordNotificationViewedEvent(withData: notification.request.content.userInfo)
             completionHandler([.badge, .sound, .alert])
         }
-
-        func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-            NSLog("%@: registered for remote notifications: %@", self.description, deviceToken.description)
-            //CleverTap.sharedInstance()?.setPushToken(deviceToken)
-        }
+//
+//        func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//            NSLog("%@: registered for remote notifications: %@", self.description, deviceToken.description)
+//            //CleverTap.sharedInstance()?.setPushToken(deviceToken)
+//        }
 
 
 }
