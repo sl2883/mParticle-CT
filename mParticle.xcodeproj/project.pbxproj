@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		1BF705732852CE2F005D352D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF705762852CE2F005D352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF705782852CE2F005D352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFB394F28638F560018048D /* mParticle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mParticle.entitlements; sourceTree = "<group>"; };
 		4B0DFA7869250C6F37783492 /* Pods-mParticle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle.debug.xcconfig"; path = "Target Support Files/Pods-mParticle/Pods-mParticle.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6D4BACDF330571ED68B87F /* Pods-mParticle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle.release.xcconfig"; path = "Target Support Files/Pods-mParticle/Pods-mParticle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +64,7 @@
 		1BF705692852CE2E005D352D /* mParticle */ = {
 			isa = PBXGroup;
 			children = (
+				1BFB394F28638F560018048D /* mParticle.entitlements */,
 				1BF7056A2852CE2E005D352D /* AppDelegate.swift */,
 				1BF7056C2852CE2E005D352D /* SceneDelegate.swift */,
 				1BF7056E2852CE2E005D352D /* ViewController.swift */,
@@ -80,7 +82,6 @@
 				4B0DFA7869250C6F37783492 /* Pods-mParticle.debug.xcconfig */,
 				DE6D4BACDF330571ED68B87F /* Pods-mParticle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -356,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mParticle/mParticle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XM67G79YA;
 				INFOPLIST_FILE = mParticle/Info.plist;
@@ -363,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios.mParticle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mParticle/mParticle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XM67G79YA;
 				INFOPLIST_FILE = mParticle/Info.plist;
@@ -383,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios.mParticle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
